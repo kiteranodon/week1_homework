@@ -112,6 +112,12 @@ body {
     background-color: #f1f5f9;
     border-radius: 8px;
     font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 /* 表 */
@@ -161,6 +167,11 @@ body {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #65c85e; 
 }
 
 /* フッター */
