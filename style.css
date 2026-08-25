@@ -83,7 +83,20 @@ body {
     border-bottom: 2px solid #2563eb;
 }
 
-/* スキル一覧：カードを横並び（Flexbox 2箇所目） */
+/* About me：画像と文章（Flexbox 2箇所目） */
+.about-content {
+    display: flex;
+    gap: 24px;              
+    align-items: center; 
+}
+
+.about-image {
+    width: 200px;           
+    flex-shrink: 0;         
+    border-radius: 8px;    
+}
+
+/* スキル一覧：カードを横並び（Flexbox 3箇所目） */
 .skill-list {
     display: flex;
     gap: 16px;
