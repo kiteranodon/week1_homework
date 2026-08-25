@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ヘッダー：ロゴとナビを両端に配置（Flexbox 1箇所目） */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 39px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin-left: 24px;
+    color: #333;
+    text-decoration: none;
+    /* リンクの下線を消す */
+}
+
+/* メインビジュアル：背景画像の上にテキストを重ねる */
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* コンテンツ幅を制限して中央寄せ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.section h2 {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* About me：画像と文章（Flexbox 2箇所目） */
+.about-content {
+    display: flex;
+    gap: 24px;              
+    align-items: center; 
+}
+
+.about-image {
+    width: 200px;           
+    flex-shrink: 0;         
+    border-radius: 8px;    
+}
+
+/* スキル一覧：カードを横並び（Flexbox 3箇所目） */
+.skill-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    /* 画面が狭いとき折り返す */
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 120px;
+    padding: 29px;
+    text-align: center;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* 表 */
+.history-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.history-table th,
+.history-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.history-table th {
+    background-color: #f1f5f9;
+}
+
+/* フォーム */
+.contact-form {
+    background-color: #f8fafc; /* 薄いグレーの背景を敷いてセクションを際立たせる */
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #475569;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button {
+    display: block;      
+    width: 200px;           
+    margin: 0 auto;         
+    padding: 12px 32px;
+    background-color: #79db72;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #65c85e; 
+}
+
+/* フッター */
+.footer {
+    margin-top: 80px;
+    padding: 26px;
+    text-align: center;
+    background-color: #1e293b;
+    color: #fff;
+}

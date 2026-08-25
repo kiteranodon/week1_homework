@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ファビコンの設定-->
+    <link rel="icon" type="image/png" href="img/icon-mountain.png">
+
+    <link rel="stylesheet" href="style.css" />
     <title>K.C. portfolio</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <p class="logo">K.C. portfolio</p>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img class="hero-image" src="img/ioudake.png" alt="硫黄岳">
+        <div class="hero-text">
+            <h1>Beyond the summit</h1>
+            <p>Webエンジニアを目指して勉強中です。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="ection">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="img/me.png" alt="海生の写真" class="about-image">
+                <div class="about-text">
+                    <p>K.C.</p>
+                    <p>出身: 岩手県</p>
+                    <p>学歴: 長野県の四年生大学卒業(経営学学士)</p>
+                    <p>職歴: 長野県茅野市の山小屋に山荘スタッフとして勤務</p>
+                    <p>強み: 山小屋勤務経験者特有のバイタリティ</p>
+                    <p>大学在学時、起業家支援団体のインターンに従事し起業家の圧倒的バイタリティに感銘を受ける。
+                    虚弱なままでは何事も成し遂げられないと決意し、山荘スタッフとして活動。
+                    登山による物資の運搬や宿泊施設の運営に携わる。
+                    標高2000m以上の過酷な環境下で15時間勤務を経験し、バイタリティを強化することに成功する。
+                    完全オフライン環境下での生活を通して、文明を大きく進歩させてきたITの恩恵の重要さを痛感、
+                    地元のテックキャンプに参加。WEBエンジニアを志す。</p>
+                </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill-card"><img src="img/html5-original.svg" alt="html"></div>
+                <div class="skill-card"><img src="img/css3-original.svg" alt="css"></div>
+                <div class="skill-card"><img src="img/laravel-original.svg" alt="laravel"></div>
+                <div class="skill-card"><img src="img/python-original.svg" alt="python"></div>
+                <div class="skill-card"><img src="img/swift-original.svg" alt="swift"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>History</h2>
+            <table class="history-table">
+                <tr>
+                    <th>年</th>
+                    <th>できごと</th>
+                </tr>
+                <tr>
+                    <td>2024年</td>
+                    <td>Webに興味を持つ</td>
+                </tr>
+                <tr>
+                    <td>2025年</td>
+                    <td>スパルタキャンプに参加</td>
+                </tr>
+                <tr>
+                    <td>2026年</td>
+                    <td>ITインターンの入社試験に挑戦、失敗</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit">送信する</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 K.C.</p>
+    </footer>
 </body>
+
 </html>
