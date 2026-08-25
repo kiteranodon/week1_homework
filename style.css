@@ -151,6 +151,9 @@ body {
 }
 
 .contact-form button {
+    display: block;      
+    width: 200px;           
+    margin: 0 auto;         
     padding: 12px 32px;
     background-color: #79db72;
     color: #fff;
